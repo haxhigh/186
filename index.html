@@ -1,0 +1,30 @@
+
+<html>
+    <head>
+        <title>end of VR</title>
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+        <script src="https://unpkg.com/aframe-spe-particles-component@^1.0.4/dist/aframe-spe-particles-component.min.js"></script>
+    </head>
+    <body>
+        <a-scene background="color: #FAFAFA" id="particles">
+            <a-entity position="0 0 0" spe-particles="
+            color:blue,red,green;
+            distribution:sphere;
+            drag:1;
+            max-age:3;
+            size:1,1,1,1;
+            duration:1;
+            velocity:1;
+            radius:0.5;
+            randomize-velocity:true;
+            velocity-spread:10;
+            particle-count:1000;
+            blending:additive;
+            active-multiplier:100;
+            ">
+            </a-entity>
+            <a-sky color="#FFFFFF"></a-sky>
+            <a-camera position="0 0 20"></a-camera>
+        </a-scene>
+    </body>
+</html>
